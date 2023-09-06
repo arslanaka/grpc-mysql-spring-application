@@ -1,3 +1,9 @@
+# ⚠️ **UNDER DEVELOPMENT** ⚠️
+
+**This project is currently under development and is not yet complete.**
+
+
+
 # grpc-mysql-spring-application
 A Spring Boot application demonstrating gRPC integration with MySQL for efficient communication and data storage.
 
