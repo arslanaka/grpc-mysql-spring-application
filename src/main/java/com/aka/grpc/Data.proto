@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package com.aka.grpc;
+
+service DataService {
+  rpc GetData (GetDataRequest) returns (GetDataResponse);
+}
+
+message GetDataRequest {
+  string query = 1;
+}
+
+message GetDataResponse {
+  repeated DataItem dataItems = 1;
+}
+
+message DataItem {
+  int32 id =1;
+  string name = 2;
+  string description =3;
+}
