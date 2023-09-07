@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package com.aka.grpc;
 
-service DataService {
+service TestUserService {
   rpc GetData (GetDataRequest) returns (GetDataResponse);
 }
 
@@ -11,10 +11,10 @@ message GetDataRequest {
 }
 
 message GetDataResponse {
-  repeated DataItem dataItems = 1;
+  repeated TestUser testuser = 1;
 }
 
-message DataItem {
+message TestUser {
   int32 id =1;
   string name = 2;
   string description =3;
